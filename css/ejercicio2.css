@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+.contenedor-ej2 {
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #1769aa;
+}
+
+.contenedor-ej2 h2 {
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tarjeta p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+.coming-soon {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.icono-cuadro {
+    background: #5c6bc0;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.coming-soon p {
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
